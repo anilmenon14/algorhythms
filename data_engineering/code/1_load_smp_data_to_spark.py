@@ -98,7 +98,7 @@ if __name__ == "__main__":
     #  Gather the unique tracks and save to csv (Will be used in standard Python script to process)
     tracksAllDf = playlistDf.select(col('track_uri')).distinct()
     tracksAllDf.write  \
-        .csv("file://" + spark.conf.get("spark.sql.warehouse.dir") + "/unique_tracks"+ "/unique_all_tracks_data")
+        .csv(spark.conf.get("spark.sql.warehouse.dir") + "/unique_tracks"+ "/unique_all_tracks_data")
 
     logger.info("Stopping application...")
     spark.stop()
