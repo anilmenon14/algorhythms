@@ -2,6 +2,8 @@
 *.joblib
 data_engineering/code/conf/env-secrets.conf
 data_engineering/code/conf/virtual_env.sh
+data_engineering/code/conf/spark.conf
+data_engineering/code/conf/spark-defaults.conf
 data_engineering/code/.cache
 slurm-*.out
 __pycache__/
